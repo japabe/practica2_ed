@@ -1,7 +1,8 @@
 /**
  * @file VD.h
  * @author carlosromero y JoseAdelaRosa
- *
+ * @date 12/10/2019
+ * @brief clase vector dinamico
  * 
  */
 
