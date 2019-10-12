@@ -42,10 +42,12 @@ int main(int argc, char *argv[])
  
  cout<<"\n Pulsa una tecla para continuar...."<<endl;
  cin.get();
+ 
  /******************************************************************************************/
  //SECTION 2: Test sobre el objeto Ingredientes. En primer lugar comprobamos que la sobrecarga de entrada/salida
  //esta bien. Y por lo tanto la operación de insertar
  //Ponemos el puntero del fichero al principio
+ /*
  f.seekg(0);
  ingredientes all_ingre;
  cout<<"Lectura de todos los ingredientes"<<endl;
@@ -58,6 +60,7 @@ int main(int argc, char *argv[])
  cin.get();
  /******************************************************************************************/
  //Section 3: Sobre ingredientes comprobamos  que la indexacion por tipo funciona
+ /*
   
   cout<<"Imprimos por tipo "<<endl;
   all_ingre.ImprimirPorTipo(cout);
@@ -67,6 +70,7 @@ int main(int argc, char *argv[])
   
  /******************************************************************************************/
  //SECTION 4: Sobre ingredientes comprobamos consultar por nombre, size y borrar
+ /*
   cout<<endl<<endl;
   cout<<"El numero de ingredientes son "<<all_ingre.size()<<endl;
   
@@ -96,6 +100,7 @@ int main(int argc, char *argv[])
   cin.get();
   /******************************************************************************************/
   //SECTION 5: Obtiene los tipos diferentes y los  ingredientes de un tipo concreto
+ /*
    VD<string> tipos=all_ingre.getTipos();
    cout<<"Los tipos de alimentos son:"<<endl;
    for (int i=0;i<tipos.size(); ++i){
@@ -109,3 +114,4 @@ int main(int argc, char *argv[])
    cout<<"Los ingredientes de tipo "<<tipo<<" son: "<<endl<<ingre_tipo<<endl;
 
 }
+  /********************************************************************************************/

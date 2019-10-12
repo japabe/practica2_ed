@@ -1,5 +1,15 @@
 //VD.cpp
 //No ponemos #include "VD.h", ya hemos incluido VD.cpp en el VD.h
+
+template <class T>//en otros sitios el class se sustituye por typename
+VD<T> :: VD (int tam)
+{
+    reservados = tam;
+    datos = new T [reservados];
+    n=0;
+}
+
+
 template <class T>
 void VD<T> :: resize(int nuevotam)
 {
@@ -30,13 +40,7 @@ void VD<T> :: Liberar()
     delete [] datos;
 }
 
-template <class T>//en otros sitios el class se sustituye por typename
-VD<T> :: VD (int tam)
-{
-    reservados = tam;
-    datos = new T [reservados];
-    n=0;
-}
+
 
 template <class T>
 VD<T> :: VD(const VD<T> &original)
@@ -49,6 +53,7 @@ VD<T> :: ~VD()
 {
     Liberar();
 }
+
 
 template <class T>
 VD<T> & VD<T> :: operator=(const VD<T> & v)
