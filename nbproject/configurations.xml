@@ -18,6 +18,7 @@
       <itemPath>src/VD.cpp</itemPath>
       <itemPath>src/ingrediente.cpp</itemPath>
       <itemPath>src/ingredientes.cpp</itemPath>
+      <itemPath>src/prueba_vd.cpp</itemPath>
       <itemPath>src/test_ingredientes.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
@@ -46,7 +47,7 @@
       </toolsSet>
       <compileType>
         <ccTool>
-          <standard>11</standard>
+          <standard>8</standard>
           <incDir>
             <pElem>include</pElem>
           </incDir>
@@ -58,11 +59,11 @@
       </item>
       <item path="include/ingredientes.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="src/VD.cpp" ex="false" tool="1" flavor2="0">
-      </item>
       <item path="src/ingrediente.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/ingredientes.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/prueba_vd.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/test_ingredientes.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -98,6 +99,8 @@
       <item path="src/ingrediente.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/ingredientes.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/prueba_vd.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/test_ingredientes.cpp" ex="false" tool="1" flavor2="0">
       </item>

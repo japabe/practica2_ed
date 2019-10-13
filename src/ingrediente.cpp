@@ -1,10 +1,20 @@
 
-#include <iostream>
-
+#include "ingrediente.h"
 using namespace std;
 
-ingrediente :: ingrediente()
-{
+
+void ingrediente::Copiar(const ingrediente &i){
+    
+        nombre = i.nombre;
+	calorias = i.calorias;
+        hidratos = i.hidratos;
+        proteinas = i.proteinas;
+        grasas = i.grasas;
+        fibra = i.fibra;
+        tipo = i.tipo;
+}
+ingrediente::ingrediente(){
+    
         nombre = "";
         calorias = 0.0;
         hidratos = 0.0;
@@ -14,8 +24,9 @@ ingrediente :: ingrediente()
         tipo = "";
 }
 
-ingrediente :: ingrediente(const ingrediente i)
-{
-	nombre = i.nombre;
-	calorias = i.calor
+ingrediente::ingrediente(const ingrediente &i){
+    
+    Copiar(i);
 }
+
+

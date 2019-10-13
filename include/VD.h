@@ -1,33 +1,31 @@
 /**
  * @file VD.h
- * @author carlosromero y JoseAdelaRosa
+ * @author Carlos Romero Cruz Jose Antonio de la Rosa Cubero
  * @date 12/10/2019
- * @brief clase vector dinamico
- * 
  */
 
 #ifndef VD_H
 #define VD_H
 
 template <class T>
-class VD
-{
+class VD{
+    
     private:
         
-        T* datos;       //zona de memoria para almacenar los datos de tipo T
+        T *datos;       //zona de memoria para almacenar los datos de tipo T
         int n;      //numero de datos almacenados
         int reservados;     //espacio asignado a datos
         
         /**
          * @brief Cambia el tamaño del vector a @p nuevotam.
-         * @param nuevotam Nuevo tamaño del vector
+         * @param nuevotam: Nuevo tamaño del vector
          * @prec 0 <= nuevotam
          */
         void resize (int nuevotam);
         
         /**
          * @brief Copia el vector @p v en el objeto actual.
-         * @param v Vector a copiar
+         * @param v: Vector a copiar
          */
         void Copiar (const VD<T> &v);
         
@@ -35,6 +33,7 @@ class VD
          * @brief Libera memoria dinámica.
          */
         void Liberar ();
+        
     public:
         
         /**
@@ -65,7 +64,7 @@ class VD
         /**
          * @brief Obtiene el numero de elementos almacenados en el vector dinamico
          */
-        int size() const;
+        inline int size() const{ return n; }
         
         /**
          * @brief Consulta y modifica el elemento i-esimo
@@ -96,6 +95,6 @@ class VD
          */
         void Borrar (int pos);
 };
-#include "VD.cpp"
-#endif /* VD_H */
+#include "../src/VD.cpp"
 
+#endif /* VD_H */
