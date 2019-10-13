@@ -11,7 +11,7 @@
  * Created on October 13, 2019, 12:00 AM
  */
 
-#include <cstdlib>
+#include <iostream>
 #include "ingrediente.h"
 
 using namespace std;
