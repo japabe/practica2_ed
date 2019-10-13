@@ -5,19 +5,23 @@
  * 
  */
 
+
+
 #ifndef INGREDIENTE_H
 #define INGREDIENTE_H
+
+#include <string>
 
 class ingrediente
 {
     private:
-        string nombre;
+        std::string nombre;
         double calorias;
         double hidratos;
         double proteinas;
         double grasas;
         double fibra;
-        string tipo;
+        std::string tipo;
     public:
         /**
          * @brief Constructor por defecto
@@ -27,6 +31,6 @@ class ingrediente
 };
 
 
+#include "ingrediente.cpp"
 #endif /* INGREDIENTE_H */
 
-#include "ingrediente.cpp"

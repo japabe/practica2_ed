@@ -20,7 +20,8 @@ using namespace std;
  * 
  */
 int main(int argc, char** argv) {
-    ingrediente bicho;
+    ingrediente queso;
+    cout << "hola "<<endl;
 
     return 0;
 }
