@@ -11,5 +11,11 @@ ingrediente :: ingrediente()
         proteinas = 0.0;
         grasas = 0.0;
         fibra = 0.0;
-        tipo = 0.0;
+        tipo = "";
+}
+
+ingrediente :: ingrediente(const ingrediente i)
+{
+	nombre = i.nombre;
+	calorias = i.calor
 }
