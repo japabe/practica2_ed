@@ -1,14 +1,43 @@
 /* 
- * @file ingrediente.h
- * @author carlosromero
- *
+* @author carlosromero y JoseAdelaRosa
+ * @date 12/10/2019
+ * @brief clase ingrediente
  * 
  */
+
+
 
 #ifndef INGREDIENTE_H
 #define INGREDIENTE_H
 
+#include <string>
+
+class ingrediente
+{
+    private:
+        std::string nombre;
+        double calorias;
+        double hidratos;
+        double proteinas;
+        double grasas;
+        double fibra;
+        std::string tipo;
+	Copiar(const ingrediente i)
+    public:
+        /**
+         * @brief Constructor por defecto
+         *
+         */
+        ingrediente();
+        /**
+         * @brief Constructor de copia
+	 * @param El ingrediente que deseamos copiar
+         *
+         */
+        ingrediente(const ingrediente i);
+};
 
 
+#include "ingrediente.cpp"
 #endif /* INGREDIENTE_H */
 
