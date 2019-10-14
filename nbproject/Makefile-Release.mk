@@ -35,11 +35,8 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/src/VD.o \
 	${OBJECTDIR}/src/ingrediente.o \
-	${OBJECTDIR}/src/ingredientes.o \
-	${OBJECTDIR}/src/prueba_vd.o \
-	${OBJECTDIR}/src/test_ingredientes.o
+	${OBJECTDIR}/src/ingredientes.o
 
 
 # C Compiler Flags
@@ -66,11 +63,6 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/practica2_ed: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/practica2_ed ${OBJECTFILES} ${LDLIBSOPTIONS}
 
-${OBJECTDIR}/src/VD.o: src/VD.cpp
-	${MKDIR} -p ${OBJECTDIR}/src
-	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/VD.o src/VD.cpp
-
 ${OBJECTDIR}/src/ingrediente.o: src/ingrediente.cpp
 	${MKDIR} -p ${OBJECTDIR}/src
 	${RM} "$@.d"
@@ -80,16 +72,6 @@ ${OBJECTDIR}/src/ingredientes.o: src/ingredientes.cpp
 	${MKDIR} -p ${OBJECTDIR}/src
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/ingredientes.o src/ingredientes.cpp
-
-${OBJECTDIR}/src/prueba_vd.o: src/prueba_vd.cpp
-	${MKDIR} -p ${OBJECTDIR}/src
-	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/prueba_vd.o src/prueba_vd.cpp
-
-${OBJECTDIR}/src/test_ingredientes.o: src/test_ingredientes.cpp
-	${MKDIR} -p ${OBJECTDIR}/src
-	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/test_ingredientes.o src/test_ingredientes.cpp
 
 # Subprojects
 .build-subprojects:

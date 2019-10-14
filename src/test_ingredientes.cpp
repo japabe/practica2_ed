@@ -15,7 +15,8 @@ int main(int argc, char *argv[])
 	  return 0;
  }	
  /******************************************************************************************/	
- //SECTION 1: Test sobre la lectura de un ingrediente
+ /*
+  //SECTION 1: Test sobre la lectura de un ingrediente
  //Ingrediente debe tener operadores de consulta y de modificacion por cada parametros
  //ademas de sobrecarga de lectura y escritura
  string nf =argv[1];
@@ -42,7 +43,7 @@ int main(int argc, char *argv[])
  
  cout<<"\n Pulsa una tecla para continuar...."<<endl;
  cin.get();
- 
+ */
  /******************************************************************************************/
  //SECTION 2: Test sobre el objeto Ingredientes. En primer lugar comprobamos que la sobrecarga de entrada/salida
  //esta bien. Y por lo tanto la operación de insertar

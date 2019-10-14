@@ -4,7 +4,6 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
-      <itemPath>include/VD.h</itemPath>
       <itemPath>include/ingrediente.h</itemPath>
       <itemPath>include/ingredientes.h</itemPath>
     </logicalFolder>
@@ -15,11 +14,8 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
-      <itemPath>src/VD.cpp</itemPath>
       <itemPath>src/ingrediente.cpp</itemPath>
       <itemPath>src/ingredientes.cpp</itemPath>
-      <itemPath>src/prueba_vd.cpp</itemPath>
-      <itemPath>src/test_ingredientes.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -53,8 +49,6 @@
           </incDir>
         </ccTool>
       </compileType>
-      <item path="include/VD.h" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="include/ingrediente.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/ingredientes.h" ex="false" tool="3" flavor2="0">
@@ -62,10 +56,6 @@
       <item path="src/ingrediente.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/ingredientes.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/prueba_vd.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/test_ingredientes.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="1">
@@ -88,21 +78,13 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
-      <item path="include/VD.h" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="include/ingrediente.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/ingredientes.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="src/VD.cpp" ex="false" tool="1" flavor2="0">
-      </item>
       <item path="src/ingrediente.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/ingredientes.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/prueba_vd.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/test_ingredientes.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
   </confs>
