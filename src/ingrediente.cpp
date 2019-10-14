@@ -1,5 +1,6 @@
 
 #include "ingrediente.h"
+#include <iostream>
 #include <ostream>
 #include <istream>
 #include <string>
@@ -124,5 +125,9 @@ std::ostream& operator <<(std::ostream &os, const ingrediente &i)
 
 std::istream& operator >>(std::istream &is, const ingrediente &i)
 {
+    char aux[256];
+    while(is.getline(aux,250, ';'))
+    {
+    }
     return is;
 }
