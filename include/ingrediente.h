@@ -4,7 +4,6 @@
  * @brief clase ingrediente
  * 
  */
-#include <iostream>
 #include <string>
 #ifndef INGREDIENTE_H
 #define INGREDIENTE_H
@@ -45,43 +44,43 @@ class ingrediente{
          * @brief Devuelve el nombre del ingrediente
          * @return nombre
          */
-        std::string getNombre();
+        std::string getNombre() const;
         
         /**
          * @brief Devuelve el número de calorías que aporta cada 100 gramos de ingrediente.
          * @return calorias
          */
-        double getCalorias();
+        double getCalorias() const;
         
         /**
          * @brief Devuelve el porcentaje de hidratos de carbono.
          * @return hidratos
          */
-        double getHidratos();
+        double getHc() const;
         
         /**
          * @brief Devuelve el porcentaje de proteínas.
          * @return proteinas
          */
-        double getProteinas();
+        double getProteinas() const;
         
         /**
          * @brief Devuelve el porcentaje de grasas.
          * @return grasas
          */
-        double getGrasas();
+        double getGrasas() const;
         
         /**
          * @brief Devuelve el porcentaje de fibra.
          * @return fibra
          */
-        double getFibra();
+        double getFibra() const;
         
         /**
          * @brief Devuelve el tipo del ingrediente.
          * @return tipo
          */
-        std::string getTipo();
+        std::string getTipo() const;
         /**
          * @brief Modifica el nombre del ingrediente
          * @param Nuevo nombre
@@ -98,7 +97,7 @@ class ingrediente{
          * @brief Modifica el porcentaje de hidratos de carbono.
          * @param Nuevos hidratos
          */
-        void setHidratos(double hidratos_nuev);
+        void setHc(double hidratos_nuev);
         
         /**
          * @brief Modifica el porcentaje de proteínas.
@@ -123,9 +122,12 @@ class ingrediente{
          * @return tipo
          */
         void setTipo(std::string tipo_nuev);
+        
+        friend std::ostream& operator <<(std::ostream &os, const ingrediente &i);
+        friend std::istream& operator >>(std::istream &is, const ingrediente &i);
+
 };
 
-std::ostream & operator <<(std::ostream &os, const ingrediente &ing);
 
 #endif /* INGREDIENTE_H */
 

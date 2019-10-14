@@ -16,6 +16,7 @@
                    projectFiles="true">
       <itemPath>src/ingrediente.cpp</itemPath>
       <itemPath>src/ingredientes.cpp</itemPath>
+      <itemPath>src/test_ingredientes.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -57,6 +58,8 @@
       </item>
       <item path="src/ingredientes.cpp" ex="false" tool="1" flavor2="0">
       </item>
+      <item path="src/test_ingredientes.cpp" ex="false" tool="1" flavor2="0">
+      </item>
     </conf>
     <conf name="Release" type="1">
       <toolsSet>
@@ -85,6 +88,8 @@
       <item path="src/ingrediente.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/ingredientes.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/test_ingredientes.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
   </confs>

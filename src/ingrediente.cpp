@@ -1,5 +1,8 @@
 
 #include "ingrediente.h"
+#include <ostream>
+#include <istream>
+#include <string>
 using namespace std;
 
 
@@ -32,40 +35,40 @@ ingrediente::ingrediente(const ingrediente &i){
 }
 
 
-std::string ingrediente::getNombre()
+std::string ingrediente::getNombre() const
 {
     return nombre;
 }
 
-double ingrediente::getCalorias()
+double ingrediente::getCalorias() const
 {
     return calorias;
 }
 
-double ingrediente::getHidratos()
+double ingrediente::getHc() const
 {
     return hidratos;
 }
 
 
-double ingrediente::getProteinas()
+double ingrediente::getProteinas() const
 {
     return proteinas;
 }
 
 
-double ingrediente::getGrasas()
+double ingrediente::getGrasas() const
 {
     return grasas;
 }
 
-double ingrediente::getFibra()
+double ingrediente::getFibra() const
 {
     return fibra;
 }
 
 
-std::string ingrediente::getTipo()
+std::string ingrediente::getTipo() const
 {
     return tipo;
 }
@@ -80,7 +83,7 @@ void ingrediente::setCalorias(double calorias_nuev)
     calorias = calorias_nuev;
 }
 
-void ingrediente::setHidratos(double hidratos_nuev)
+void ingrediente::setHc(double hidratos_nuev)
 {
     hidratos = hidratos_nuev;
 }
@@ -103,4 +106,23 @@ void ingrediente::setFibra(double fibra_nuev)
 void ingrediente::setTipo(std::string tipo_nuev)
 {
     tipo = tipo_nuev;
+}
+
+std::ostream& operator <<(std::ostream &os, const ingrediente &i)
+{
+ os << "Leido ingrediente:" << endl;
+ os<<"Nombre " <<i.nombre<<endl;
+ os<<"Calorias "<<i.calorias<<endl;
+ os<<"Hc "<<i.hidratos<<endl;
+ os<<"Proteinas "<<i.proteinas<<endl;
+ os<<"Grasas "<<i.grasas<<endl;
+ os<<"Fibra "<<i.fibra<<endl;
+ os<<"Tipo "<<i.tipo<<endl;
+ return os;
+}
+
+
+std::istream& operator >>(std::istream &is, const ingrediente &i)
+{
+    return is;
 }
