@@ -123,10 +123,10 @@ class ingrediente{
          */
         void setTipo(std::string tipo_nuev);
         
-        friend std::ostream& operator <<(std::ostream &os, const ingrediente &i);
-        friend std::istream& operator >>(std::istream &is, const ingrediente &i);
 
 };
+std::ostream& operator <<(std::ostream &os, const ingrediente &i);
+std::istream& operator >>(std::istream &is, ingrediente &i);
 
 
 #endif /* INGREDIENTE_H */
