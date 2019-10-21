@@ -15,11 +15,10 @@
 \mbox{\Hypertarget{class_v_d_a411ad026db1c8e0617d9031f1f1017a5}\label{class_v_d_a411ad026db1c8e0617d9031f1f1017a5}} 
 int \hyperlink{class_v_d_a411ad026db1c8e0617d9031f1f1017a5}{size} () const
 \begin{DoxyCompactList}\small\item\em Obtiene el numero de elementos almacenados en el vector dinamico. \end{DoxyCompactList}\item 
-T \& \hyperlink{class_v_d_a7d80240b5791d62b7e27657763afe712}{operator\mbox{[}$\,$\mbox{]}} (int i)
+T \& \hyperlink{class_v_d_a021495b46a5b59c7fd1e25653ab8f824}{operator\mbox{[}$\,$\mbox{]}} (int i)
 \begin{DoxyCompactList}\small\item\em Consulta y modifica el elemento i-\/esimo. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{class_v_d_a16ae24a4b545a02baf6733ba5c066346}\label{class_v_d_a16ae24a4b545a02baf6733ba5c066346}} 
-const T \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (int i) const
-\item 
+const T \& \hyperlink{class_v_d_ab0c8adba584dcbb2f07171dedcfc395e}{operator\mbox{[}$\,$\mbox{]}} (int i) const
+\begin{DoxyCompactList}\small\item\em Consulta y modifica el elemento i-\/esimo. \end{DoxyCompactList}\item 
 void \hyperlink{class_v_d_aded65b5f02cceb9780303afd5c88acb8}{Insertar} (const T \&d, int pos)
 \begin{DoxyCompactList}\small\item\em Inserta un objeto en la posicion pos del vector dinamico. \end{DoxyCompactList}\item 
 void \hyperlink{class_v_d_a13528c6fae34510d10699f426de88e27}{Borrar} (int pos)
@@ -57,7 +56,7 @@ si no se proporciona un valor para tam se tomara como 10
 
 Constructor de copia. 
 
-19$\ast$
+
 \begin{DoxyParams}{Parameters}
 {\em original} & vector dinamico origen \\
 \hline
@@ -124,12 +123,12 @@ Operador de asignacion.
 \begin{DoxyReturn}{Returns}
 una referencia al objeto al que apunta this 
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_v_d_a7d80240b5791d62b7e27657763afe712}\label{class_v_d_a7d80240b5791d62b7e27657763afe712}} 
+\mbox{\Hypertarget{class_v_d_a021495b46a5b59c7fd1e25653ab8f824}\label{class_v_d_a021495b46a5b59c7fd1e25653ab8f824}} 
 \index{VD@{VD}!operator\mbox{[}\mbox{]}@{operator[]}}
 \index{operator\mbox{[}\mbox{]}@{operator[]}!VD@{VD}}
-\subsubsection{\texorpdfstring{operator[]()}{operator[]()}}
-{\footnotesize\ttfamily template$<$class T$>$ \\
-T\& \hyperlink{class_v_d}{VD}$<$ T $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\subsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+T \& \hyperlink{class_v_d}{VD}$<$ T $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
 
 
 
@@ -142,6 +141,25 @@ Consulta y modifica el elemento i-\/esimo.
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 una referencia al elemento i-\/esimo del vector dinamico 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_v_d_ab0c8adba584dcbb2f07171dedcfc395e}\label{class_v_d_ab0c8adba584dcbb2f07171dedcfc395e}} 
+\index{VD@{VD}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!VD@{VD}}
+\subsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+const T \& \hyperlink{class_v_d}{VD}$<$ T $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption}) const}
+
+
+
+Consulta y modifica el elemento i-\/esimo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & posicion del elemento \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+una referencia constante al elemento i-\/esimo del vector dinamico 
 \end{DoxyReturn}
 
 
