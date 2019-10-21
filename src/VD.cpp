@@ -1,8 +1,6 @@
 
 #include <iostream>
 
-#include "VD.h"
-
 template <class T>
 VD<T> :: VD (int tam){
     
@@ -17,8 +15,7 @@ VD<T> :: VD (int tam){
         datos = nullptr;
         reservados = 0;
     }
-    
-    n = reservados;
+    n = 0;
 }
 
 template <class T>
@@ -104,7 +101,7 @@ void VD<T> :: Insertar (const T &d, int pos){
      que n < reservados/2, y cuando se supere esa cifra hacer un resize de
      2*reservados*/
     
-    if(0 <= pos && pos < size() ){
+    if(0 <= pos && pos <= size() ){
         
         if (size() >= (reservados/2))
             resize(2*reservados);
@@ -115,6 +112,9 @@ void VD<T> :: Insertar (const T &d, int pos){
         datos[pos] = d;
         n++;
     }
+    
+    else if(pos > size() && pos < reservados)
+        Insertar(d, size());
     
     else
         std::cerr << "ERROR::Posición " << pos << " no válida." << std::endl;

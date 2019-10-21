@@ -4,9 +4,11 @@
  * @brief clase ingrediente
  * 
  */
-#include <string>
+
 #ifndef INGREDIENTE_H
 #define INGREDIENTE_H
+
+#include<string>
 
 class ingrediente{
     
@@ -90,30 +92,35 @@ class ingrediente{
         /**
          * @brief Modifica el número de calorías que aporta cada 100 gramos de ingrediente.
          * @param Nuevas calorias
+         * @prec calorias_nuev >= 0
          */
         void setCalorias(double calorias_nuev);
         
         /**
          * @brief Modifica el porcentaje de hidratos de carbono.
          * @param Nuevos hidratos
+         * @prec 0 <= hidratos_nuev <= 100
          */
         void setHc(double hidratos_nuev);
         
         /**
          * @brief Modifica el porcentaje de proteínas.
          * @param Nuevas proteinas
+         * @prec 0 <= proteinas_nuev <= 100
          */
         void setProteinas(double proteinas_nuev);
         
         /**
          * @brief Modifica el porcentaje de grasas.
          * @param Nuevas grasas
+         * @prec 0 <= grasas_nuev <= 100
          */
         void setGrasas(double grasas_nuev);
         
         /**
          * @brief Modifica el porcentaje de fibra.
          * @param Nueva fibra
+         * @prec 0 <= fibra_nuev <= 100
          */
         void setFibra(double fibra_nuev);
         
@@ -125,7 +132,21 @@ class ingrediente{
         
 
 };
+
+/**
+ * @brief Sobrecarga del operador de escritura <<
+ * @param os: Flujo
+ * @param i: Ingrediente a escribir
+ * @return os flujo modificado 
+ */
 std::ostream& operator <<(std::ostream &os, const ingrediente &i);
+
+/**
+ * @brief Sobrecarga del oeprador de lectura >>
+ * @param is: Flujo
+ * @param i: Ingrediente donde se introducen los datos leídos.
+ * @return is flujo
+ */
 std::istream& operator >>(std::istream &is, ingrediente &i);
 
 

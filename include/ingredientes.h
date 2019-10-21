@@ -4,10 +4,12 @@
  *
  * 
  */
-#include "VD.h"
-#include "ingrediente.h"
+
 #ifndef INGREDIENTES_H
 #define INGREDIENTES_H
+
+#include "VD.h"
+#include "ingrediente.h"
 
 class ingredientes{
     private:

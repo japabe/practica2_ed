@@ -4,21 +4,4 @@
         <activeConfTypeElem>1</activeConfTypeElem>
         <activeConfIndexElem>0</activeConfIndexElem>
     </data>
-    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
-    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-<<<<<<< HEAD
-            <file>file:/home/carlosromero/Code/cpp_projects/practica2_ed/src/prueba_vd.cpp</file>
-            <file>file:/home/carlosromero/Code/cpp_projects/practica2_ed/src/VD.cpp</file>
-            <file>file:/home/carlosromero/Code/cpp_projects/practica2_ed/include/VD.h</file>
-=======
-            <file>file:/home/jose/Workplace/practica2_ed/src/ingredientes.cpp</file>
-            <file>file:/home/jose/Workplace/practica2_ed/src/VD.cpp</file>
-            <file>file:/home/jose/Workplace/practica2_ed/include/VD.h</file>
-            <file>file:/home/jose/Workplace/practica2_ed/include/ingrediente.h</file>
-            <file>file:/home/jose/Workplace/practica2_ed/include/ingredientes.h</file>
-            <file>file:/home/jose/Workplace/practica2_ed/src/ingrediente.cpp</file>
->>>>>>> e8726ec8586f0c1d4bc8d054fc4ce4d244a250c1
-        </group>
-    </open-files>
 </project-private>

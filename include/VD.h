@@ -1,4 +1,5 @@
 /**
+/**
  * @file VD.h
  * @author Carlos Romero Cruz Jose Antonio de la Rosa Cubero
  * @date 12/10/2019
@@ -95,6 +96,6 @@ class VD{
          */
         void Borrar (int pos);
 };
-#include "../src/VD.cpp"
+#include "VD.cpp"
 
 #endif /* VD_H */

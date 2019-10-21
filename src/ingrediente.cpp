@@ -1,9 +1,10 @@
 
-#include "ingrediente.h"
 #include <ostream>
 #include <istream>
 #include <sstream>
 #include <string>
+#include "ingrediente.h"
+
 using namespace std;
 
 
@@ -150,5 +151,6 @@ std::istream& operator >>(std::istream &is, ingrediente &i)
     i.setFibra(stod(metodo_leido));
     getline(linea_como_is, metodo_leido, ';');
     i.setTipo(metodo_leido);
+    
     return is;
 }
